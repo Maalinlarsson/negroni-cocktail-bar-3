@@ -62,12 +62,13 @@ img { max-width: 100%; }
 .bg-featured            { background-color:#183039;        }
 
 .text-featured          { color: #183039;                  }
+.text-light             { color: white;                    }
 
-.text-lg                { font-size: 3.5rem;                 }
-.text-xl                { font-size: 4.5rem;                 }
+.text-lg                { font-size: 4.5rem;                 }
+.text-xl                { font-size: 6rem;                   }
 .text-xxl               { font-size: 8.5rem;                 }
 .text-bold              { font-weight: bold;                 }
-.tight-text             { line-height: 0.8;                  }
+.text-tight             { line-height: 0.8;                  }
 
 .left                   { text-align: left;                  }
 .center                 { text-align: center;                }
@@ -175,3 +176,15 @@ footer h2 {
 .bg-plant {background-image: url('/images/negroni-4.jpg') }
 .bg-water {background-image: url('/images/water-light.jpg') }
 
+
+/*---------------- Media query ----------------*/
+@media (max-width 48em) {
+
+     .mob-hide { display: none: }
+     .mob-padded-t-0 { padding-top: 0; }
+
+     h1 { font-size: 6rem; }
+     h1 span { font-size: 2rem; }
+
+     footer a { font-size: 1rem; }
+}
