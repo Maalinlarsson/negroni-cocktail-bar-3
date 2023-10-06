@@ -1,3 +1,11 @@
+/*----------------  CSS variables ----------------*/
+
+:root {
+    --featured: #183039;
+    --dark: #24282B; 
+    --light: #F8F6F4; 
+}
+
 /*---------------- Universal reset ----------------*/
 * {
     padding: 0;
@@ -57,11 +65,11 @@ img { max-width: 100%; }
 .tall-90                { min-height: 90vh;                  }
 .tall-100               { min-height: 100vh;                 }
 
-.bg-light               { background-color:#F8F6F4;        }
-.bg-dark                { background-color: #24282B;       }
-.bg-featured            { background-color:#183039;        }
+.bg-light               { background-color: var(--light);    }
+.bg-dark                { background-color: var(--dark);     }
+.bg-featured            { background-color: var(--featured); }
 
-.text-featured          { color: #183039;                  }
+.text-featured          { color: var(--featured);            }
 .text-light             { color: white;                    }
 
 .text-lg                { font-size: 4.5rem;                 }
@@ -165,7 +173,7 @@ footer h2 {
 
 /*---------------- Images and background images styles ----------------*/
 .bg-image {
-    background-color: #183039;
+    background-color: var(--featured);
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat;
