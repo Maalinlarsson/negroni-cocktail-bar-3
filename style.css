@@ -4,6 +4,9 @@
     --featured: #183039;
     --dark: #24282B; 
     --light: #F8F6F4; 
+    --serif: 'Martel', serif;
+    --heading: 'Didot', Georgia, serif;
+
 }
 
 /*---------------- Universal reset ----------------*/
@@ -84,13 +87,13 @@ img { max-width: 100%; }
 
 /*---------------- Typography styles ----------------*/
 body {
-    font-family: 'Martel', serif;
+    font-family: var(--serif);
     font-weight: 200;
   }
   
 h1,h2,h3,h4,h5,h6 {
     font-weight: normal;
-    font-family: 'Didot', Georgia, serif;
+    font-family: var(--heading);
 }
   
 h1 {
